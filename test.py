@@ -1,0 +1,9 @@
+import mempool
+
+mp = mempool.Mempools()
+a = ("p5Ara6yWMW905RYpH+uFuw1ezSoIVdWUAUKGoUE+jk7fXuCmqHgwONQq8vJNIvtw+TwBiPgVBgNYo9zaiBc2SpYtL2KGWUuRofTJD0fuo8cnuhHAx7xlx3MkaXisV7Am9qGWIpF4g8hcTzLsIIbHA/2PG+znWW6KVh/2jbm5YTY6muQ9LT3pvoYXY5nDtgCYfcOfMDcrIACUDXbJLLMDHOKMxlugShvu6cZhOKwQEztOQeIlIjxZFMQNkoirMIe0nXqpMx4jDg9m+A5SEPpmQfeDZIW4P/VzVr4IMuzGjEi4nxqXSTdk9UbLx74aeqn5e+Sf2npVAZzWVUGj4hsoXYXwr/yk7pxilpR1+h3DSpFEk9tuYVoSO7Ojozdt8GwJFASI8XabOICCK5dvl21UAoWujJnJ165DQkqIYfVulH410AJbL7Pa5AxSHQTgiISwyVOJ/KsQ0fTMEBjDD4V/1L8pNd2NgXGl/l+D8Z96eHcS6onhfQO1rIFnKWuKOKiouWrQN+octnF+dKXMB+766AN7QQL7gaAfNU+pTuQyW5PNZVaoGkc2ccz2ynF5L2nHT7T9pEY9TtLQf/hogfnPqUvYfsOMfItf89v4OItJ2lSbt8qgg+keTk+FsfwdE581cr8JfQg/vahamzj6gNt5V1ETc3lqQHXDKoKsX8Qo6mM=",)
+c = mp.Fetchall('static/ledger.db',"SELECT * FROM transfered WHERE signature=?",a,True)
+print(c)
+
+
+
